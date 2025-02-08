@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Brief on JavaScript</title>
+
+</head>
+
+<body>
+<p id="demo"></p>
+<p id="Hour"></p>
+<p id="Greet"></p>
+<script>
+var studentname="Rajveer";//String datatype
+var Grade=7;//Integer
+var Marks=555.55;//Float
+var studentid=true;//Booleandatatyne
+
+document.write("Student Name: ",studentname,"<br>");
+    document.write("Student Grade: ", Grade, "<br>");
+    document.write("Student Marks: ", Marks, "<br>");
+    function myFunction(){
+var Greeting;
+var time = new Date().getHours();
+if (time < 10){
+    Greeting = "Good Morning";
+}
+        if (time < 12) {
+            Greeting = "Good Morning";
+        }
+        else if (time < 19) {
+            Greeting = "Good Day";
+        }
+        else {
+            Greeting = "Good Evening";
+        }
+
+document.getElementById("Hour").innerHTML = "Current Hour is : "+ time;
+        document.getElementById("Greet").innerText = "Greeting";
+
+
+    }
+</script>
+<button onelick="myFunction()">Try It</button>
+<p id="Hour"></p>
+<p id="Greet"></p>
+</body>
+
+</html>
